@@ -1,0 +1,32 @@
+/* ScrollingBar.css */
+.scrolling-bar-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #00FF00; /* Green background color */
+    white-space: nowrap;
+  }
+  
+  .scrolling-bar {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .notification {
+    display: inline-block;
+    padding: 10px 20px;
+   /* background-color: white; *//* Optional: for better visibility */
+    border-radius: 50%;
+    margin: 0 10px;
+    color: black;
+  }
+  
+  /* Keyframes for smooth scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
